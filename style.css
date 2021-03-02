@@ -1,0 +1,41 @@
+body {
+  overflow: hidden;
+}
+
+.background {
+  -webkit-animation: offset 10s alternate infinite linear;
+          animation: offset 10s alternate infinite linear;
+  background: linear-gradient(41deg, red, transparent, blue 33%) 92vw 59vh, linear-gradient(94deg, red, transparent, blue 33%) 26vw 61vh, linear-gradient(99deg, red, transparent, blue 33%) 30vw 13vh, linear-gradient(134deg, red, transparent, blue 33%) 43vw 4vh, linear-gradient(163deg, red, transparent, blue 33%) 65vw 19vh, linear-gradient(180deg, red, transparent, blue 33%) 88vw 19vh, linear-gradient(122deg, red, transparent, blue 33%) 68vw 96vh, linear-gradient(155deg, red, transparent, blue 33%) 1vw 46vh, linear-gradient(130deg, red, transparent, blue 33%) 11vw 81vh, linear-gradient(140deg, red, transparent, blue 33%) 34vw 14vh, linear-gradient(33deg, red, transparent, blue 33%) 61vw 8vh, linear-gradient(107deg, red, transparent, blue 33%) 15vw 41vh, linear-gradient(111deg, red, transparent, blue 33%) 86vw 69vh, linear-gradient(11deg, red, transparent, blue 33%) 88vw 97vh, linear-gradient(117deg, red, transparent, blue 33%) 37vw 0vh, linear-gradient(9deg, red, transparent, blue 33%) 0vw 70vh, linear-gradient(40deg, red, transparent, blue 33%) 45vw 10vh, linear-gradient(101deg, red, transparent, blue 33%) 13vw 81vh, linear-gradient(153deg, red, transparent, blue 33%) 77vw 50vh, linear-gradient(29deg, red, transparent, blue 33%) 16vw 74vh, linear-gradient(46deg, red, transparent, blue 33%) 86vw 33vh;
+  background-blend-mode: difference;
+  filter: brightness(450%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.background::before {
+  background: inherit;
+  background-blend-mode: inherit;
+  mix-blend-mode: difference;
+  filter: brightness(96%);
+  content: "";
+  display: block;
+  position: inherit;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+}
+
+@-webkit-keyframes offset {
+  100% {
+    background-position: calc(92vw + 5px) calc(59vh + -5px), calc(26vw + -5px) calc(61vh + -5px), calc(30vw + -25px) calc(13vh + -15px), calc(43vw + -20px) calc(4vh + -5px), calc(65vw + -5px) calc(19vh + -10px), calc(88vw + 15px) calc(19vh + 10px), calc(68vw + 0px) calc(96vh + 15px), calc(1vw + 20px) calc(46vh + 20px), calc(11vw + 15px) calc(81vh + -15px), calc(34vw + 25px) calc(14vh + -25px), calc(61vw + 15px) calc(8vh + -15px), calc(15vw + -10px) calc(41vh + 10px), calc(86vw + 0px) calc(69vh + -20px), calc(88vw + -10px) calc(97vh + 0px), calc(37vw + 0px) calc(0vh + 20px), calc(0vw + 15px) calc(70vh + 0px), calc(45vw + 25px) calc(10vh + 20px), calc(13vw + 0px) calc(81vh + 0px), calc(77vw + 0px) calc(50vh + 15px), calc(16vw + 20px) calc(74vh + 20px), calc(86vw + -15px) calc(33vh + 20px);
+  }
+}
+
+@keyframes offset {
+  100% {
+    background-position: calc(92vw + 5px) calc(59vh + -5px), calc(26vw + -5px) calc(61vh + -5px), calc(30vw + -25px) calc(13vh + -15px), calc(43vw + -20px) calc(4vh + -5px), calc(65vw + -5px) calc(19vh + -10px), calc(88vw + 15px) calc(19vh + 10px), calc(68vw + 0px) calc(96vh + 15px), calc(1vw + 20px) calc(46vh + 20px), calc(11vw + 15px) calc(81vh + -15px), calc(34vw + 25px) calc(14vh + -25px), calc(61vw + 15px) calc(8vh + -15px), calc(15vw + -10px) calc(41vh + 10px), calc(86vw + 0px) calc(69vh + -20px), calc(88vw + -10px) calc(97vh + 0px), calc(37vw + 0px) calc(0vh + 20px), calc(0vw + 15px) calc(70vh + 0px), calc(45vw + 25px) calc(10vh + 20px), calc(13vw + 0px) calc(81vh + 0px), calc(77vw + 0px) calc(50vh + 15px), calc(16vw + 20px) calc(74vh + 20px), calc(86vw + -15px) calc(33vh + 20px);
+  }
+}
